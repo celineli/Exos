@@ -1,0 +1,41 @@
+.grey {
+	background-color: grey;
+}
+
+.red {
+	background-color: red;
+}
+
+.beige {
+	background-color: beige;
+}
+
+.green {
+	background-color: green;
+}
+
+.salmon {
+	background-color: salmon;
+}
+
+.lightblue {
+	background-color: lightblue;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.centered {
+	float: none;
+	margin: 0 auto;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+

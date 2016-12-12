@@ -1,0 +1,41 @@
+html, body {
+height: 100%
+}
+
+body {  /*BACKGROUND IMAGE FIXED*/
+	margin:0;
+	padding:0;
+	background: url(https://abs.twimg.com/b/front_page/v1/EU_1.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+}
+
+p {
+	color: #fff;
+	font-size: 20px;
+}
+
+h1 {
+	color: #fff;
+}
+
+.form {
+	background-color: #fff;
+	padding: 10px;
+	margin: 10px 0px 20px 0px;
+	border-radius: 5px;
+}
+
+footer {
+	height: 50px;
+}
+
+footer a {
+	font-size:12px;
+	color: #fff;
+	margin-right: 8px;
+}
+
+.page-wrap {
+min-height: 100%;
+}

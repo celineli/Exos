@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/exo-07.css" />
+  </head>
+  <body>
+
+	<!-- 
+	documentez les fonctionnalités de bootstrap
+	
+	# pour chaque section
+	utilisez une mise en page 1/3 + 2/3 :
+	- dans la colonne 1/3 : le titre
+	- dans la colonne 2/3 : la description de la fonctionnalité
+	puis faites l'exo en dessous
+
+	attention : utilisez la classe `container` (et pas `container-fluid`) sur tous les exos
+
+	# section 1
+	faites une mise en page en 1 colonne de largeur de 4, centrée, en écran sm
+	qui se transforme en 1 colonne de largeur de 3, centrée, en écran md
+	dans la colonne, insérez un formulaire :
+	- nom
+	- date de naissance (un seul champ input, pas de select ou autre)
+	- adresse
+	- code postal
+	- localité
+	- bouton de validation
+
+	chaque champ doit avoir un label qui sera positionné au dessus du champ
+
+	# section 2
+	reprenez le formulaire de la section 1 et
+	mettez certains champs en mode validé et d'autres en mode erreur
+
+	# section 3
+	reprenez le formulaire de la section 1 mais, cette fois-ci,
+	mettez tous les labels dans une colonne `col-sm-2`,
+	et tous les champs dans une colonne `col-sm-10`
+
+	le labels doivent être ferrés (alignés) à droite
+	
+	hint : horizontal form
+	
+	# section 4
+	faites une mise en page en 1 colonne (toutes tailles)
+	dans la colonne insérer un formulaire :
+	- date (3 champs selects jour, mois et année)
+	- heure (2 champs selects heure et minutes)
+	- bouton de validation
+	
+	chaque champ doit avoir un label qui sera positionné au dessus du champ
+	les selects ne doivent pas occuper 100% de la largeur du conteneur
+	
+	hint : `width: auto;`
+
+	# section 5
+	faites une mise en page en 1 colonne (toutes tailles)
+	dans la colonne insérer un formulaire :
+	- login
+	- password
+	- case à cocher « se souvenir de moi »
+	- bouton de validation
+	
+	tous les champs doivent être sur une seule ligne
+	
+	hint : inline form
+
+	-->
+
+	<div class="container grey">
+		<div class="row">
+			<div class="col-md-4 red">
+				<h2>SECTION 1</h2>
+			</div>
+			<div class="col-md-8 salmon">
+				<p>				mise en page en 1 colonne de largeur de 4, centrée, en écran sm
+	qui se transforme en 1 colonne de largeur de 3, centrée, en écran md
+	dans la colonne, insérez un formulaire</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4 col-md-3 centered pink">
+				<div>
+					<label>Nom</label>
+				</div>
+				<div>
+					<input type="text" name="nom" placeholder="Nom"/>
+				</div>
+				<div>
+					<label>Date de naissance</label>
+				</div>
+				<div>
+					<input type="date" name="date" placeholder="Date de naissance"/>
+				</div>
+				<div>
+					<label>Adresse</label>
+				</div>
+				<div>
+					<input type="text" name="adresse" placeholder="Adresse"/>
+				</div>
+				<div>
+					<label>CP</label>
+				<div>
+					<input type="text" name="cp" placeholder="Code postal"/>
+				</div>
+				<div>
+				<label>Localité</label>
+				</div>
+				<div>
+					<input type="text" name="localite" placeholder="Localité"/>
+				</div>
+					<button>Submit</button>
+			</div>
+		</div>
+
+
+<div class="container grey">
+		<div class="row">
+			<div class="col-md-4 red">
+				<h2>SECTION 2</h2>
+			</div>
+			<div class="col-md-8 salmon">
+				<p>Reprenez le formulaire de la section 1 et
+	mettez certains champs en mode validé et d'autres en mode erreur</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4 col-md-3 centered pink">
+				<div>
+					<label>Nom</label>
+				</div>
+				<div>
+					<input type="text" name="nom" placeholder="Nom" pattern="nom" required=""/>
+				</div>
+				<div>
+					<label>Date de naissance</label>
+				</div>
+				<div>
+					<input type="date" name="date" placeholder="Date de naissance" pattern=""/>
+				</div>
+				<div>
+					<label>Adresse</label>
+				</div>
+				<div>
+					<input type="text" name="adresse" placeholder="Adresse" pattern="adresse"/>
+				</div>
+				<div>
+					<label>CP</label>
+				<div>
+					<input type="text" name="cp" placeholder="Code postal" pattern="" required=""/>
+				</div>
+				<div>
+				<label>Localité</label>
+				</div>
+				<div>
+					<input type="text" name="localite" placeholder="Localité" pattern="localité"/>
+				</div>
+					<button>Submit</button>
+			</div>
+		</div>
+
+	<div class="container grey">
+		<div class="row">
+			<div class="col-md-4 red">
+				<h2>SECTION 3</h2>
+			</div>
+			<div class="col-md-8 salmon">
+				<p>Reprenez le formulaire de la section 1 mais, cette fois-ci,
+	mettez tous les labels dans une colonne `col-sm-2`,
+	et tous les champs dans une colonne `col-sm-10`</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<form class="form-horizontal lightblue">
+				<div class="form-group">
+					<label class="col-sm-2 control-label" >Adresse</label>
+					<div class="col-sm-10">
+						<input type="text" name="nom" placeholder="Nom"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Date de naissance</label>
+					<div class="col-sm-10">
+							<input type="date" name="date" placeholder="Date de naissance"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Adresse</label>
+					<div class="col-sm-10">
+						<input type="text" name="adresse" placeholder="Adresse"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">CP</label>
+					<div class="col-sm-10"> 
+						<input type="text" name="cp" placeholder="Code postal"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Localité</label>
+					<div class="col-sm-10">
+						<input type="text" name="localite" placeholder="Localité"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Envoyer</label>
+					<div class="col-sm-10">
+						<button>Submit</button>
+					</div>
+				</div>
+			</form>
+			</div>
+		</div>
+
+	<div class="container grey">
+		<div class="row">
+			<div class="col-md-4 red">
+				<h2>SECTION 4</h2>
+			</div>
+			<div class="col-md-8 salmon">
+				<p>faites une mise en page en 1 colonne (toutes tailles)
+	dans la colonne insérer un formulaire :
+	- date (3 champs selects jour, mois et année)
+	- heure (2 champs selects heure et minutes)
+	- bouton de validation</p>
+chaque champ doit avoir un label qui sera positionné au dessus du champ
+	les selects ne doivent pas occuper 100% de la largeur du conteneur
+	
+	hint : `width: auto;`
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 green">
+				<div class="row">
+					<div class="col-md-4">
+						<div>
+						<label>jour</label>
+						</div>
+						<select name="jour">
+							<option value="value1">Jour</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<div>
+						<label>mois</label>
+						</div>
+						<select name="mois">
+							<option value="value1">Mois</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<div>
+						<label>année</label>
+						</div>
+						<select name="annee">
+							<option value="value1">Année</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div>
+						<label>heure</label>
+						</div>
+						<select name="heure">
+							<option value="value1">Heure</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<div>
+						<label>minutes</label>
+						</div>
+						<select name="minutes">
+							<option value="value1">Minutes</option>
+						</select>
+					</div>
+				</div>
+
+				<div>
+					<button>Valider</button>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 red">
+				<h2>SECTION 5</h2>
+			</div>
+			<div class="col-md-8 salmon">
+				<p>faites une mise en page en 1 colonne (toutes tailles)</br>
+	dans la colonne insérer un formulaire :</br>
+	- login</br>
+	- password</br>
+	- case à cocher « se souvenir de moi »</br>
+	- bouton de validation</br>
+	
+	tous les champs doivent être sur une seule ligne</br>
+	
+	hint : inline form</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 beige">
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="login">Login</label>
+						<input type="text" class="form-control" id="login" placeholder="Login">
+					</div>
+					<div class="form-group">
+						<label for="password">Email</label>
+	 					<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+					<div class="checkbox">
+						<label>
+						<input type="checkbox"> Remember me
+						</label>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+
+  </body>
+</html>

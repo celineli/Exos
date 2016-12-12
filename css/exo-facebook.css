@@ -1,0 +1,99 @@
+html,body {
+	width: 0 auto;
+	height: 100%;
+}
+
+/*HEADER*/
+
+header {
+	background-color: #3b5998;
+	height: 80px;
+	color: #fff;
+	font-size: 0.8em;
+}
+
+header a {
+	color: #8b9dc3;
+}
+
+header a:hover {
+	color: #8b9dc3;
+	text-decoration: underline;
+}
+
+.logofb {
+	width: 80%;
+	margin-top: 25px;
+}
+
+header form {
+	margin-top: 15px;
+}
+
+header .btn {
+	margin-top: 20px;
+	background-color: #3b5998;
+	border: 1px solid black;
+	height: 25px;
+	padding: 0px 5px;
+	font-size: 1em;
+	border-radius: 0 !important;
+}
+
+header .form-control {
+	height: 25px;
+	border: 1px solid black;
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+/*CONTENT*/
+
+.main {
+	background-color: #dfe3ee;
+}
+
+.left {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 40px;
+	color: #17233c;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.right {
+	font-size: 19px;
+}
+
+.main a {
+	font-size: 11px;
+}
+
+.radio {
+	font-size: 19px;
+	margin-top: 15px;
+}
+
+.conditions {
+	font-size: 11px;
+	color: #9B9D9E;
+}
+
+.btn-success {
+	font-size: 19px;
+	padding: 7px 20px;
+	background: linear-gradient(#67ae55, #578843)
+	background-color: #69a74e;
+	box-shadow: inset 0 1px 1px #a4e388;
+	border:color: #3b6e22 #3b6e22 #2c5115;
+	margin-top: 10px;
+	min-width: 194px;
+}
+
+.txt {
+
