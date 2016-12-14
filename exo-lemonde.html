@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<title>Exo - Le Monde</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,14 +37,14 @@
 		<div class="container-fluid header2">
 			<div class="row">
 				<div class="col-md-2 col-md-offset-1">
-					<input type="text" alt="Search" placeholder="Rechercher">
+					<input type="text" name="search" placeholder="Rechercher">
 				</div>
 
 				<div class="col-md-6 col-md-offset-3">
-					<a href="https://www.facebook.com/lemonde.fr"><img src="medias/iconmonstr-facebook-3-24.png"/></a>
-					<a href="https://twitter.com/lemondefr"><img src="medias/iconmonstr-twitter-3-24.png"/></a>
-					<a href="https://www.facebook.com/lemonde.fr"><img src="medias/iconmonstr-facebook-3-24.png"/></a>
-					<a href="https://twitter.com/lemondefr"><img src="medias/iconmonstr-twitter-3-24.png"/></a>
+					<a href="https://www.facebook.com/lemonde.fr"><img src="medias/iconmonstr-facebook-3-24.png" alt="fb"/></a>
+					<a href="https://twitter.com/lemondefr"><img src="medias/iconmonstr-twitter-3-24.png" alt="twitter"/></a>
+					<a href="https://www.facebook.com/lemonde.fr"><img src="medias/iconmonstr-facebook-3-24.png" alt="fb"/></a>
+					<a href="https://twitter.com/lemondefr"><img src="medias/iconmonstr-twitter-3-24.png" alt="twitter"/></a>
 					<a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Emploi</a>
 					<a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Newsletters</a>
 					<a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> S'inscrire</a>
@@ -52,17 +53,15 @@
 			</div>
 		</div> <!--CONTAINER END-->
 
-
 			<div class="container-fluid header-logo">
 				<div class="row">
 
 					<div class="col-md-4 col-md-offset-4 text-center">
 						<img src="medias/le-monde.png" alt="le monde logo" class="logo" />
 
-
 						<div class="row">
 							<div class="col-md-4 col-md-offset-2">
-								<select name="edition">
+								<select name="edition" class="sel">
 									<option value="value1" selected>EDITION GLOBALE</option>
 									<option value="value2">EDITION AFRIQUE</option>
 								</select>
@@ -73,9 +72,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div><!--END CONTAINER HEADER LOGO-->
 
-			<div class="container-fluid">
 				<nav class="navbar navcolor">
 					<div class="container">
 						<div class="navbar-header">
@@ -96,11 +94,10 @@
 							<li><a href="#">PIXELS</a></li>
 							<li><a href="#">CAMPUS</a></li>
 							<li><a href="#">M LE MAG</a></li>
-							<li class="yellow2"><a href="#">EDITION ABONNES</a></li>
+							<li class="yellow"><a href="#">EDITION ABONNES</a></li>
 						</ul>
 					</div>
-				</nav>
-			</div>
+				</nav>	<!--END NAVBAR COLORS-->
 
 			<div class="container-fluid main">
 				<div class="container articles">
@@ -108,7 +105,7 @@
 					<nav class="navbar top">
 						<div class="container">
 							<div class="navbar-header">
-								<a class="navbar-brand moment" href="#">EN CE MOMENT</a>
+								<span class="navbar-brand moment">EN CE MOMENT</span>
 							</div>
 							<ul class="nav navbar-nav">
 								<li><a href="#">Syrie</a></li>
@@ -119,38 +116,96 @@
 								<li><a href="#">Big Browser</a></li>
 							</ul>
 						</div>
-					</nav>
+					</nav> <!--END BLACK NAVBAR-->
 
-					<div class="row">
-						<div class="col-md-8">
-							<a>A Alep, « la logique de vainqueur et de vaincu n’a pas de sens »</a>
-							<img src="medias/alep.jpg"/>
-							<div>Dans les quartiers loyalistes de la ville, la victoire du régime sur la zone rebelle suscite l’espoir mais ne fait pas l’unanimité.
-							</div>
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<ul>
-											<li><a href="#">lien vers article</a>
-											<li><a href="#">lien vers article</a>
-										</ul>
-									</div>
+					<div class="container">
+						<div class="row">
 
-									<div class="col-md-6">
-										<ul>
-											<li><a href="#">lien vers article</a>
-											<li><a href="#">lien vers article</a>
-										</ul>
-									</div>
+							<div class="col-md-8"> <!--COL MD 8-->
+								<h1><a href="#">A Alep, « la logique de vainqueur et de vaincu n’a pas de sens »</a></h1>
+								<img src="medias/alep.jpg" class="img-responsive" alt="alep"/>
+								<div>Dans les quartiers loyalistes de la ville, la victoire du régime sur la zone rebelle suscite l’espoir mais ne fait pas l’unanimité.
 								</div>
-							</div>
 
-						<div class="col-md-4">
-						</div>
-					</div>
+								<section class="section1">
+									<div class="row">
+										<div class="col-md-6">
+											<ul>
+												<li><a href="#">lien vers article</a></li>
+												<li><a href="#">lien vers article</a></li>
+											</ul>
+										</div>
 
+											<div class="col-md-6">
+												<ul>
+													<li><a href="#">lien vers article</a></li>
+													<li><a href="#">lien vers article</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section class="section2">
+										<div class="row">
+											<div class="col-md-6">
+												<img src="medias/cerv.jpg" class="img-responsive" alt="cerveau"/>
+												<h4><a href="#">Titre de l'article</a></h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												<img src="medias/cerv.jpg" class="img-responsive pic-article" alt="cerveau"/>
+												<h4><a href="#">Titre de l'article</a></h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+											<div class="col-md-6">
+												<img src="medias/cerv.jpg" class="img-responsive" alt="cerveau"/>
+												<h4><a href="#">Titre de l'article</a></h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												<img src="medias/cerv.jpg" class="img-responsive pic-article" alt="cerveau"/>
+												<h4><a href="#">Titre de l'article</a></h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</section>
+
+								</div> <!--END COL MD 8 (LEFT)-->
+
+							<div class="col-md-4">
+
+								<div class="side">
+									<p class="en-continu">En continu</p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p><span class="time">20h39</span><a href="#">Coupe de la Ligue: PSG-Lille en direct</a></p>
+									<p class="en-continu2">Toute l'actu "en continu"</p>
+								</div>
+
+								<div>
+									<img src="medias/bloc_fixe_une.jpg" class="pub" alt="pub"/>
+								</div>
+
+								<div class="side">
+									<p class="partages">Les plus partagés</p>
+										<ul>
+									<li><p><span class="num">1</span><a href="#">La tragédie d’Alep, le résultat « de beaucoup de lâcheté et d’indifférence »</a></p></li>
+									<li><p><span class="num">2</span><a href="#">Marion Maréchal-Le Pen s’affiche avec Philippe de Villiers</a></p></li>
+									<li><p><span class="num">3</span><a href="#">A Fresnes, le « traitement inhumain » et « dégradant » des détenus</a></p></li>
+									<li><p><span class="num">4</span><a href="#">Présidentielle : Macron s’installe dans les intentions de vote, le PS</a></p></li>
+									<li><p><span class="num">5</span><a href="#">Le scandale du crédit d’impôt recherche</a></p></li>
+									<li><p><span class="num">6</span><a href="#">En Suède, le racisme au pied du sapin</a></p></li>
+									<li><p><span class="num">7</span><a href="#">L’Assemblée nationale vote la prolongation de l’état d’urgence</a></p></li>
+									<li><p><span class="num">8</span><a href="#">L’Assemblée nationale vote la prolongation de l’état d’urgence</a></p></li>
+									</ul>
+								</div>
+
+							</div> <!--END COL MD 4 (RIGHT)-->
+
+					</div><!--DIV ROW ARTICLES-->
 				</div><!--DIV CONTAINER ARTICLES-->
 			</div>  <!--DIV CONTAINER FLUID-->
-
+</div>
 	</body>
 </html>
