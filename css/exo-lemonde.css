@@ -1,0 +1,110 @@
+
+/*HEADER 1*/
+
+.header1 {
+	background: linear-gradient(#2d3841, #010c16);
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.header1-left a {
+	color: #fff;
+	margin-right: 10px;
+	line-height: 25px;
+	padding: 4px 7px;
+	text-decoration: none;
+}
+
+.header1 select {
+	background: linear-gradient(#2d3841, #010c16);
+	height: 25px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.yellow {
+	background-color: #FFC600;
+	height: 25px;
+}
+
+.yellow a {
+	color: #000;
+}
+
+/*HEADER 2*/
+
+.header2 {
+	border-bottom: 1px solid #D2D6DB;
+	padding: 8px 0;
+}
+
+.header2 a {
+	color: #A2A2A2;
+	padding: 5px;
+}
+
+.header2 a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+/*HEADER IMG*/
+
+.logo {
+	width: 70%;
+	height: auto;
+}
+
+.header-logo a {
+	color: #A2A2A2;
+}
+
+.header-logo a:hover {
+	color: #A2A2A2;
+	text-decoration: none;
+}
+
+
+.nav li a {
+	padding: 15px 6px;
+}
+
+/*NAVBAR COULEUR*/
+
+.navcolor {
+	border-top: 2px solid grey;
+	margin-top: 20px;
+	border-bottom: 1px solid grey;
+	border-radius: 0;
+}
+
+.yellow2 {
+	background-color: #FFC600;
+}
+
+.yellow2 a {
+	color: #000;
+	padding: 0;
+}
+
+/*ARTICLES*/
+
+.main {
+	background-color: #E9EDF0;
+}
+
+.articles {
+	background-color: #fff;
+	margin-top: 20px;
+}
+
+.moment {
+	font-size: 12px;
+}
+
+.top {
+	background: linear-gradient(#2d3841, #010c16);
+	border-radius: 0;
+}
+
