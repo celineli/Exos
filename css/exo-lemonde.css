@@ -94,6 +94,7 @@
 	background-color: #fff;
 	margin-top: 20px;
 	padding: 0;
+	
 }
 
 .nav4 {
@@ -134,12 +135,30 @@
 	padding-top: 10px;
 }
 
+.section3 a {
+	color: #2E3942;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.section3 a:hover {
+	color: #129AF0;
+}
+
 /*SIDE*/
 
 .side {
 	background-color: #FAFBFC;
 	border: 1px solid #EEF1F5;
 	margin-top: 10px;
+}
+
+.witness {
+	font-size: 14px;
+	color: #fff;
+	background-color: #D50303;
+	font-weight: bold;
+	padding: 5px;
 }
 
 .en-continu {
@@ -171,6 +190,24 @@
 	font-size: 13px;
 	font-weight: bold;
 	padding: 5px;
+	margin: 0 auto;
+}
+
+.sharedfoot {
+	background-color: #fff;
+	padding: 7px;
+	-webkit-box-shadow: 0px -3px 5px 0px rgba(239,240,241,1);
+	-moz-box-shadow: 0px -3px 5px 0px rgba(239,240,241,1);
+	box-shadow: 0px -3px 5px 0px rgba(239,240,241,1);
+}
+
+.follow {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.icons {
+	margin: 0 5px;
 }
 
 .num {
@@ -201,11 +238,17 @@
 	font-weight: bold;
 	padding: 3px;
 }
- 
+
+.suscribe-txt {
+	color: #BFC3C7;
+	margin-left: 20px;
+}
+
 .btn-suscribe {
 	background-color: #ffc600;
 	border-color: #d9a800;
 	padding: 3px;
+	margin: 10px;
 }
 
 /*VIDEOS*/
@@ -214,6 +257,12 @@
 	background-color: #000b15;
 	margin-top: 20px;
 	padding-bottom: 20px;
+}
+
+.rowvid {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding: 10px 0;
 }
 
 .videos h3 {
@@ -225,3 +274,9 @@
 	color: #fff;
 	font-size: 1.7rem;
 }
+
+.vidfoot {
+	text-align: center;
+	padding: 5px;
+}
+
