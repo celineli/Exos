@@ -3,12 +3,12 @@
 	<head>
 		<title>Exo - Le Monde</title>
 		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/exo-lemonde.css" />
 	</head>
 	<body>
-
 
 		<div class="container-fluid nav1">
 			<div class="row">
@@ -22,9 +22,18 @@
 				</div>
 
 				<div class="col-md-2">
-					<select name="services">
-						<option value="value2" selected>Services Le Monde</option>
-					</select>
+					<div class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services Le Monde <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Accueil</a></li>
+							<li><a href="#">Hors-Séries</a></li>
+							<li><a href="#">Livre</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Abonnement auto</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Abonnement emploi</a></li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="col-md-2 yellow">
@@ -97,7 +106,7 @@
 							<li class="yellow"><a href="#">EDITION ABONNES</a></li>
 						</ul>
 					</div>
-				</nav>	<!--END NAV4-->
+				</nav>	<!--END NAV3-->
 
 			<div class="container-fluid main">
 				<div class="container content">
@@ -118,7 +127,7 @@
 						</div>
 					</nav> <!--END NAV4-->
 
-					<div class="container">
+					<div class="container articles">
 						<div class="row">
 
 							<div class="col-md-8"> <!--COL MD 8-->
@@ -243,8 +252,8 @@
 							<div class="col-md-4">
 
 								<div class="side">
-									<p class="witness">APPEL A TEMOIGNAGES</p>
-									<p><a href="#">Racontez-nous le jour où vous avez coupé votre smartphone</a></p>
+									<p class="temoignages">APPEL A TEMOIGNAGES</p>
+									<h4><a href="#">Racontez-nous le jour où vous avez coupé votre smartphone</a></h4>
 									<button>Partagez votre expérience</button>
 								</div>
 
@@ -350,9 +359,12 @@
 
 		<footer class="footer navbar-fixed-bottom">
 			<div class="container">
-				<p class="text-muted">En Continu 11:58 Astuce de chef : comment décorer des biscuits pour Noël ?</p>
+				<p class="foottxt">EN CONTINU <strong>11:58</strong> Astuce de chef : comment décorer des biscuits pour Noël ?</p>
 			</div>
 		</footer>
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	</body>
 </html>

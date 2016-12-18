@@ -23,6 +23,14 @@
 	color: #fff;
 }
 
+.dropdown-toggle {
+	color: white;
+}
+.dropdown-toggle:hover{
+	color: white;
+	text-decoration: none;
+}
+
 .yellow {
 	background-color: #FFC600;
 }
@@ -36,7 +44,8 @@
 
 .nav2 {
 	border-bottom: 1px solid #D2D6DB;
-	padding: 8px 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .nav2 a {
@@ -77,11 +86,16 @@
 /*NAV3*/
 
 .nav3 {
-	border-top: 2px solid #D2D6DB;
+	border-top: 3px solid #D2D6DB;
 	margin-top: 20px;
 	border-bottom: 1px solid #D2D6DB;
 	border-radius: 0;
 	margin-bottom: 0;
+}
+
+.nav3 li a {
+	color: #000;
+	font-weight: bold;
 }
 
 /*CONTENT*/
@@ -97,6 +111,19 @@
 	
 }
 
+.articles a {
+	color: #003366;
+}
+
+h1 { 
+	font-family: 'Droid Serif', serif;
+}
+
+.articles a:hover {
+	color: #129af0;
+	text-decoration: none;
+}
+
 .nav4 {
 	background: linear-gradient(#2d3841, #010c16);
 	border-radius: 0;
@@ -106,7 +133,7 @@
 	color: #E9EDF0;
 }
 
-.nav a:hover {
+.nav4 a:hover {
 	color: #932328;
 }
 
@@ -153,12 +180,16 @@
 	margin-top: 10px;
 }
 
-.witness {
+.temoignages {
 	font-size: 14px;
 	color: #fff;
 	background-color: #D50303;
 	font-weight: bold;
 	padding: 5px;
+}
+
+h4 {
+	font-family: 'Droid Serif', serif;
 }
 
 .en-continu {
@@ -283,4 +314,12 @@
 
 .footer {
 	background-color: #000B15;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+}
+
+.foottxt {
+	color: white;
+	font-size: 12px;
 }
