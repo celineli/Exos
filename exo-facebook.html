@@ -2,6 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
+		<title>Exo facebook</title>
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/exo-facebook.css" />
@@ -17,10 +18,10 @@
 				<form>
 					<div class="form-group col-md-2 col-md-offset-2">
 						<label for="mail">Adresse e-mail ou mobile</label>
-						<input type="mail" class="form-control" id="mail" placeholder="">
+						<input type="email" class="form-control" id="mail">
 					</div>
 					<div class="form-group col-md-2">
-						<label for="password">Mot de passe</label>
+						<label for="pwd">Mot de passe</label>
 						<input type="password" class="form-control" id="pwd" placeholder="">
 						<a href="#">Mot de passe oublié ?</a>
 					</div>
@@ -42,7 +43,7 @@
 				<p class="right">C'est gratuit (et ça le restera toujours)<p>
 
 				<form>
-					<div class="col-md-6"">
+					<div class="col-md-6">
 						<div class="form-group">
 							<input type="text" class="form-control" id="name" placeholder="Prénom">
 						</div>
@@ -57,36 +58,35 @@
 						<input type="email" class="form-control" id="email" placeholder="Numéro de mobile ou e-mail">
 					</div>
 					<div class="form-group">
-						<input type="email" class="form-control" id="email" placeholder="Confirmez numéro de mobile ou e-mail">
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" id="pwd" placeholder="Nouveau mot de passe">
+						<input type="password" class="form-control" id="pwd-signup" placeholder="Nouveau mot de passe">
 					</div>
 
 
 					<div class="right">Date de naissance</div>
 					<select name="day" title="Jour">
-						<option value="0" selected="1">Jour</option>
+						<option value="0">Jour</option>
 					</select>
 					<select name="month" title="Mois">
-						<option value="0" selected="1">Mois</option>
+						<option value="0">Mois</option>
 					</select>
 					<select name="year" title="Année">
-						<option value="0" selected="1">Année</option>
+						<option value="0">Année</option>
 					</select>
 					<a href="#">Pourquoi indiquer ma date de naissance ?</a>
 
 					<div class="radio">
 						<label class="radio-inline">
-							<input type="radio" name="radio" id="radio" value="option1"> Femme
+							<input type="radio" name="radio" value="option1"> Femme
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="radio" id="radio" value="option2"> Homme
+							<input type="radio" name="radio" value="option2"> Homme
 						</label>
 					</div>
 
-					<div class=" col-md-10 conditions">
-						En cliquant sur Inscription, vous acceptez nos <a href=" #">Conditions</a> et indiquez que vous avez lu notre <a href="#"Politique d’utilisation des données</a>, y compris notre <a href="#">Utilisation des cookies</a>.
+					<div class="col-md-10 conditions">
+						En cliquant sur Inscription, vous acceptez nos <a href="#">Conditions</a> et indiquez que vous avez lu notre <a href="#">Politique d’utilisation des données</a>, y compris notre <a href="#">Utilisation des cookies</a>.
 					</div>
 
 					<button type="button" class="btn btn-success">Inscription</button>
